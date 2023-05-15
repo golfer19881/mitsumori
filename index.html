@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>動的な見積もりフォーム</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <style>
+        body{
+            margin: auto;
+            padding: 80px 240px 120px;
+        }
+        form{
+            padding-bottom: 40px;
+        }
+        .fixed{
+            position: fixed;
+            left: 0;
+            bottom: -8px;
+            background: rgb(230, 230, 230);
+            width: 100%;
+            padding: 24px 240px;
+        }
+        p{
+            margin-bottom: 40px;
+        }
+        label{
+            color: #555;
+        }
+        h1{
+            margin-bottom: 40px;
+        }
+        h4{
+            border-bottom: 1px solid #888;
+            padding-bottom: 4px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+  <h1>ランディングページ 見積もりフォーム</h1><br>
+
+  <h4>1.売り出す商品のコンセプトや訴求の方向性は決まっていますか？</h4>
+  <form id="estimate-form">
+    <p>
+        <label>
+            <input type="radio" name="radio1" value="100000">
+            すでに決まっている
+        </label><br>
+        <label>
+            <input type="radio" name="radio1" value="200000">
+            コンセプトはあるが、訴求の方向は相談したい
+        </label><br>
+        <label>
+            <input type="radio" name="radio1" value="300000">
+            コンセプトから相談したい
+        </label><br>
+    </p>
+
+
+<h4>2.ワイヤーフレーム（LPの構成図）はありますか？</h4>
+    <p>
+        <label>
+            <input type="radio" name="radio2" value="100000">
+            ある
+        </label><br>
+        <label>
+            <input type="radio" name="radio2" value="200000">
+            ラフはある
+        </label><br>
+        <label>
+            <input type="radio" name="radio2" value="300000">
+            ワイヤーフレームの作成からお願いしたい
+        </label><br>
+    </p>
+    <!-- <p>
+        <input type="checkbox" id="option1" name="option1" value="100000">
+        <label for="option1">すでに決まっている (100,000円)</label><br>
+        <input type="checkbox" id="option2" name="option2" value="200000">
+        <label for="option2">コンセプトはあるが、訴求の方向は相談したい (200,000円)</label><br>
+        <input type="checkbox" id="option3" name="option3" value="300000">
+        <label for="option3">コンセプトから相談したい (300,000円)</label><br>
+    </p> -->
+
+  <h4>3.原稿はご自身で用意されますか？</h4>
+    <p>
+        <label>
+            <input type="radio" name="radio3" value="100000">
+            全て用意できる
+        </label><br>
+        <label>
+            <input type="radio" name="radio3" value="200000">
+            ベースは用意するが修正して欲しい
+        </label><br>
+        <label>
+            <input type="radio" name="radio3" value="300000">
+            ライティングを全てお願いしたい
+        </label><br>
+    </p>
+
+<h4>4.写真・イラストなど素材は自身で用意されますか？</h4>
+  <p>
+      <label>
+          <input type="radio" name="radio4" value="0">
+          全て用意できる
+      </label><br>
+      <label>
+          <input type="radio" name="radio4" value="100000">
+          写真・イラストなど素材は無いので、購入 or 制作してほしい
+      </label><br>
+  </p>
+
+<h4>5.サーバー運用も依頼しますか？</h4>
+  <p>
+      <label>
+          <input type="radio" name="radio5" value="100000">
+          はい
+      </label><br>
+      <label>
+          <input type="radio" name="radio5" value="0">
+          いいえ
+      </label><br>
+  </p>
+
+<h4>6.ページ数はおよそ何ページくらいでしょうか？</h4>
+  <p>
+      <label>
+          <input type="radio" name="radio6" value="100000">
+          1ページ
+      </label><br>
+      <label>
+          <input type="radio" name="radio6" value="150000">
+          2ページ
+      </label><br>
+      <label>
+          <input type="radio" name="radio6" value="200000">
+          3~4ページ
+      </label><br>
+      <label>
+          <input type="radio" name="radio6" value="300000">
+          5~8ページ
+      </label><br>
+      <label>
+          <input type="radio" name="radio6" value="400000">
+          9~12ページ
+      </label><br>
+  </p>
+
+  <h4>7.デザインはどれくらいこだわりますか？</h4>
+  <p>
+      <label>
+          <input type="radio" name="radio7" value="100000">
+          テンプレートでOK
+      </label><br>
+      <label>
+          <input type="radio" name="radio7" value="200000">
+          セミオーダー形式
+      </label><br>
+      <label>
+          <input type="radio" name="radio7" value="300000">
+          オリジナルで制作
+      </label><br>
+  </p>
+
+<h4>8.いつまでに公開したいですか？</h4>
+  <p>
+      <label>
+          <input type="radio" name="radio8" value="0">
+          決まってない
+      </label><br>
+      <label>
+          <input type="radio" name="radio8" value="0">
+          3ヶ月後
+      </label><br>
+      <label>
+          <input type="radio" name="radio8" value="0">
+          4ヶ月後
+      </label><br>
+      <label>
+          <input type="radio" name="radio8" value="0">
+          5ヶ月後
+      </label><br>
+      <label>
+          <input type="radio" name="radio8" value="0">
+          6ヶ月後
+      </label><br>
+      <label>
+          <input type="radio" name="radio8" value="0">
+          それ以降
+      </label><br>
+  </p>
+  <button type="submit">送信</button>
+</form>
+
+<h3 class="h3 fixed">合計金額: 約 <span id="total">0</span>円</h3>
+
+<script>
+    var radios = document.querySelectorAll('input[type="radio"]');
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    var totalOutput = document.getElementById('total');
+    var form = document.getElementById('estimate-form');
+  
+    radios.forEach(function(radio) {
+      radio.addEventListener('change', function() {
+        calculateTotal();
+      });
+    });
+  
+    checkboxes.forEach(function(checkbox) {
+      checkbox.addEventListener('change', function() {
+        calculateTotal();
+      });
+    });
+  
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('見積もりの合計:' + totalOutput.textContent + '円:');
+    });
+  
+    function calculateTotal() {
+      var total = 0;
+      radios.forEach(function(radio) {
+        if (radio.checked) {
+          total += parseInt(radio.value, 10);
+        }
+      });
+      checkboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+          total += parseInt(checkbox.value, 10);
+        }
+      });
+      totalOutput.textContent = total;
+    }
+  </script>
+
+</body>
+</html>
